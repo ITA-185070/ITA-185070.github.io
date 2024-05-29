@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Sección Educativa - UPSLP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilo/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo/sitio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            margin: 20px;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .sidebar {
+            width: 200px;
+            position: fixed;
+            top: 51px; /* Adjusted for navbar height */
+            left: 0;
+            height: 100%;
+            background-color: #333;
+            padding-top: 20px;
+            overflow-y: auto;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            margin-left: 220px; /* Same as sidebar width */
+            padding: 20px;
+        }
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script src="script/funciones.js"></script>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img width="100px" src="img/UPSLPlogo.png" alt="UPSLP Logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">UPSLP<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="Mision.html">Nuestra Universidad</a></li>
+                <li><a href="modeloAcademico.html" id="p2_12" onclick="cargaPractica('html/p2/ejercicio_1-2.html');return false;">Modelo Académico</a></li>
+                <li><a href="directorio.html" id="p2_13" onclick="cargaPractica('html/p2/ejercicio_1-3.html');return false;">Directorio</a></li>
+                <li class="divider"></li>
+                <li><a href="CentrosLaboratorios.html" id="p2_41" onclick="cargaPractica('html/p2/ejercicio_4-1.html');return false;">Centros y Laboratorios</a></li>
+                <li><a href="ExtensionUniversitaria.html" id="p2_42" onclick="cargaPractica('html/p2/ejercicio_4-2.html');return false;">Extensión Universitaria</a></li>
+              </ul>
+            </li>
+            <li><a href="ofertaEducativa.html" class="dropdown-toggle" role="button" aria-expanded="false">Oferta Educativa<span class="caret"></span></a></li>
+            <li><a href="DeporteCultura.html">Cultura y Deportes</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Vinculación<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="egresados.html" id="p1_11" onclick="cargaPractica('html/p1/ejercicio_1-1.html');return false;">Egresados</a></li>
+                <li><a href="#" id="p1_12" onclick="cargaPractica('html/p1/ejercicio_1-2.html');return false;">Bolsa de trabajo</a></li>
+                <li><a href="#" id="p1_13" onclick="cargaPractica('html/p1/ejercicio_1-3.html');return false;">Seguimiento</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Comunidad</a></li>
+            <li class="dropdown">
+              <a href="PreguntasFrecuentes.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ayuda<span class="caret"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    <div class="sidebar">
+        <a href="ofertaEducativaISTI.html">INGENIERÍA EN SISTEMAS Y TECNOLOGÍAS INDUSTRIALES (ISTI)</a>
+        <a href="ofertaEducativaITI.html">INGENIERÍA EN TECNOLOGÍAS DE LA INFORMACIÓN (ITI)</a>
+        <a href="ofertaEducativaITEM.html">INGENIERÍA EN TELEMÁTICA (ITEM)</a>
+        <a href="ofertaEducativaITMA.html">INGENIERÍA EN TECNOLOGÍAS DE MANUFACTURA (ITMA)</a>
+        <a href="ofertaEducativaLMI.html">LICENCIATURA EN MERCADOTECNIA INTERNACIONAL (LMI)</a>
+        <a href="ofertaEducativaLAG.html">LICENCIATURA EN ADMINISTRACIÓN Y GESTIÓN (LAG)</a>
+    </div>
+
+    <div class="content">
+        <header>
+            <h1>Sección Educativa</h1>
+        </header>
+        
+        <div class="container">
+            <div class="section" style="color: #333;">
+                <div class="container">
+                    <h1>Ingeniería en Tecnologías de la Información</h1>
+                    <br><img src="img/ITIimg.jpg" alt="Estudiantes de ingeniería"><br><br>
+                    <p>El Ingeniero en Tecnologías de la Información aplica sus sólidos conocimientos al diseño, desarrollo e instrumentación de soluciones informáticas que requieren las organizaciones, atendiendo las necesidades humanas derivadas de la interacción con la computadora. Es competente para mantener equipos de cómputo operando eficientemente y ofrece al usuario soluciones integrales a los problemas asociados con el área computacional.</p>
+                    <p>Los Objetivos del Plan de Estudios de la Ingeniería en Tecnologías de la Información que ofrece la Universidad Politécnica de San Luis Potosí enfatizan siete aspectos importantes en la formación del Ingeniero, que le confieren una sólida preparación para desempeñarse exitosamente en el mundo laboral:</p>
+                    <ol type="1">
+                        <li>Adquisición y empleo adecuado de los conocimientos de las Matemáticas y las Ciencias Básicas, como fundamentos para un ejercicio amplio de la profesión</li>
+                        <li>Manejo diestro de los conocimientos de las tecnologías</li>
+                        <li>Uso y desarrollo de la tecnología de la información para la innovación</li>
+                        <li>Aplicación de métodos de investigación para identificar problemas y desarrollar soluciones de manera independiente</li>
+                        <li>Formación integral con uso adecuado del idioma español, el dominio del idioma inglés, el desarrollo del pensamiento lógico y de habilidades para el autoestudio</li>
+                        <li>Formación flexible apoyado en un Sistema de Tutorías para el uso eficiente del tiempo y la recuperación del conocimiento adquirido a través de otros medios</li>
+                        <li>La adquisición de bases teóricas para continuar con estudios de postgrado.</li>
+                    </ol>
+                    <br><hr>
+                    <h2>Mision del programa</h2>
+                    <p>“El Programa Educativo de la carrera de Ingeniería en Tecnologías de la Información está comprometido con la excelencia en la formación integral y humana, y con el aprendizaje, el desarrollo y aplicación del conocimiento en los campos de desarrollo e implementación de software, ofreciendo una solución integral a los problemas asociados con el área computacional. Está comprometido con la sociedad para mantener una oferta educativa pertinente en el área y desarrollar investigación aplicada involucrando alumnos en la solución de problemas tecnológicos de la sociedad. “</p>
+                    <hr>
+                    <h2>Plan de Estudios</h2>
+                    <p>Consulta el <a href="img/ITIplan.jpg" target="_blank">Plan de Estudios</a></p>
+                    <hr>
+                    <h2>Certificaciones:</h2>
+                    <ul>
+                        <li>Oracle:</li>
+                            <ul>
+                                <li>Oracle Certified Associate, MySQL 5</li>
+                                <li>Oracle Certified Professional, MySQL 5.6 Developer</li>
+                                <li>Oracle Certified Associate, Java SE 5/SE 6</li>
+                                <li>Oracle Certified Professional, Java SE 6 Programmer</li>
+                                <li>Oracle Certified Associate, Java SE 7 Programmer</li>
+                                <li>Oracle Certified Associate, Oracle Solaris 10 Operating System</li>
+                                <li>Oracle Certified Professional, Oracle Solaris 10 System Administrator</li>
+                                <li>Oracle Certified Associate, Oracle Solaris 11 System Administrator</li>
+                            </ul>
+                        <li>Cisco:</li>
+                        <ul>
+                            <li>Cisco Certified Entry Networking Technician (CCENT)</li>
+                            <li>Cisco Certified Network Associate (CCNA)</li>
+                            <li>Microsoft Technology Associate: Database Fundamentals</li>
+                        </ul>
+                        <li>Microsoft:</li>
+                        <ul>
+                            <li>Microsoft Office Specialist: Microsoft Office Word 2013</li>
+                            <li>Microsoft Office Specialist: Microsoft Office PowerPoint 2013</li>
+                            <li>Microsoft Office Specialist: Microsoft Office Excel 2013</li>
+                        </ul>
+                    </ul>
+                    <hr>
+                    <h2>Logros / Distinciones</h2>
+                    <ul>
+                      <li>Mejor Academia a nivel Latinoamérica que promueve la certificación, el programa Cisco Networking Academy Program y que forma nuevos estudiantes en el área de TI</li>
+                      <li>3 medallas a estudiantes ejemplares otorgadas por la asociación Trayectoria de Éxito.</li>
+                      <li>1er, 6º, 5º  lugar concurso Netriders México, 2009, 2011 y 2013.</li>
+                      <li>1er lugar expo ciencias otorgada por la Red Nacional de Actividades Juveniles en Ciencia y Tecnología, 2012 y 2013.</li>
+                      <li>5º y 6º lugar en el Torneo Mexicano de Robótica, 2016.</li>
+                      <li>150+ Certificaciones CCNA y CCENT como Academia CCNA</li>
+                      <li>480+ Certificaciones JAVA y Solaris como Academia Oracle.</li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>185572 - Israel Pérez Martínez, 185070 - Isaac Torres Aguilera</p>
+            <p>Ingeniería en Tecnologías de la Información</p>
+        </footer>
+    </div>
+</body>
+</html>

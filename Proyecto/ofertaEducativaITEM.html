@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Sección Educativa - UPSLP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilo/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo/sitio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            margin: 20px;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .sidebar {
+            width: 200px;
+            position: fixed;
+            top: 51px; /* Adjusted for navbar height */
+            left: 0;
+            height: 100%;
+            background-color: #333;
+            padding-top: 20px;
+            overflow-y: auto;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            margin-left: 220px; /* Same as sidebar width */
+            padding: 20px;
+        }
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script src="script/funciones.js"></script>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img width="100px" src="img/UPSLPlogo.png" alt="UPSLP Logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">UPSLP<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="Mision.html">Nuestra Universidad</a></li>
+                <li><a href="modeloAcademico.html" id="p2_12" onclick="cargaPractica('html/p2/ejercicio_1-2.html');return false;">Modelo Académico</a></li>
+                <li><a href="directorio.html" id="p2_13" onclick="cargaPractica('html/p2/ejercicio_1-3.html');return false;">Directorio</a></li>
+                <li class="divider"></li>
+                <li><a href="CentrosLaboratorios.html" id="p2_41" onclick="cargaPractica('html/p2/ejercicio_4-1.html');return false;">Centros y Laboratorios</a></li>
+                <li><a href="ExtensionUniversitaria.html" id="p2_42" onclick="cargaPractica('html/p2/ejercicio_4-2.html');return false;">Extensión Universitaria</a></li>
+              </ul>
+            </li>
+            <li><a href="ofertaEducativa.html" class="dropdown-toggle" role="button" aria-expanded="false">Oferta Educativa<span class="caret"></span></a></li>
+            <li><a href="DeporteCultura.html">Cultura y Deportes</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Vinculación<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="egresados.html" id="p1_11" onclick="cargaPractica('html/p1/ejercicio_1-1.html');return false;">Egresados</a></li>
+                <li><a href="#" id="p1_12" onclick="cargaPractica('html/p1/ejercicio_1-2.html');return false;">Bolsa de trabajo</a></li>
+                <li><a href="#" id="p1_13" onclick="cargaPractica('html/p1/ejercicio_1-3.html');return false;">Seguimiento</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Comunidad</a></li>
+            <li class="dropdown">
+              <a href="PreguntasFrecuentes.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ayuda<span class="caret"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    <div class="sidebar">
+        <a href="ofertaEducativaISTI.html">INGENIERÍA EN SISTEMAS Y TECNOLOGÍAS INDUSTRIALES (ISTI)</a>
+        <a href="ofertaEducativaITI.html">INGENIERÍA EN TECNOLOGÍAS DE LA INFORMACIÓN (ITI)</a>
+        <a href="ofertaEducativaITEM.html">INGENIERÍA EN TELEMÁTICA (ITEM)</a>
+        <a href="ofertaEducativaITMA.html">INGENIERÍA EN TECNOLOGÍAS DE MANUFACTURA (ITMA)</a>
+        <a href="ofertaEducativaLMI.html">LICENCIATURA EN MERCADOTECNIA INTERNACIONAL (LMI)</a>
+        <a href="ofertaEducativaLAG.html">LICENCIATURA EN ADMINISTRACIÓN Y GESTIÓN (LAG)</a>
+    </div>
+    
+    <div class="content">
+        <header>
+            <h1>Sección Educativa</h1>
+        </header>
+        
+        <div class="container">
+            <div class="section" style="color: #333;">
+                <div class="container">
+                    <h1>Ingeniería en Telemática [Mantenimiento</h1>
+                    <br><img src="img/ITEMimg.jpg" alt="Estudiantes de ingeniería"><br><br>
+                    <p>En la carrera de Ingeniería en Telemática, se prepara a los estudiantes en tres grandes áreas del conocimiento que conforman la carrera y las cuales son:</p>
+                    <p>El programa educativo de Ingeniería en Telemática, se divide en tres ciclos de formación académica, los cuales permiten al estudiante poder optar por por el título de Profesional Asociado en el cuarto semestre, el de Licenciado Técnica en el sexto semestre y el grado de Ingeniero en Telemática al concluir el programa de estudios en su totalidad.</p>
+                    <p> Los estudiantes de la carrera de Ingeniería en Telemática tienen la posibilidad de participar en una gran cantidad de actividades del tipo académicas, como lo son las visitas a empresas del sector, en proyectos de investigación aplicada, asistencia a congresos y los intercambios estudiantiles con otras universidades nacionales e internacionales.</p>
+
+                    <ol type="a">
+                        <li>Las redes de telecomunicaciones, en dicha área del conocimiento se incluyen los temas que tienen que ver con los sistemas de telecomunicaciones de la actualidad, como lo son las redes de área local, las redes de cobertura amplía, las redes convergentes de voz, datos y video, las redes de telefonía celular, los sistemas de microondas terrestres y vía satélite, así como los estándares para instalar la infraestructura de cableado estructurado.</li>
+                        <li>Las tecnologías de la información, que es el conjunto de aplicaciones basadas en software y equipos informáticos que hacen uso de las redes de telecomunicaciones para la transmisión y ejecución de las mismas; entre un sinnúmero de aplicaciones  encontramos: la programación web, el diseño de bases de datos y de conocimientos, aplicaciones de voz y video, programación para dispositivos móviles y para el posicionamiento de vehículos.</li>
+                        <li>Los sistemas embebidos, es un área del conocimiento en constante desarrollo industrial y se refiere a sistemas electrónicos que incluyen una micro-computadora, entradas y salidas estándares, conectividad y software. Esta micro-computadora puede adaptarse a casi cualquier tipo de aplicación, siendo su principal ventaja la movilidad y la conectividad; haciendo realidad el concepto de internet de las cosas. Los sistemas embebidos pueden obtener, procesar, transmitir y recibir información de diferentes fuentes incluyendo sensores y dispositivos típicos de entrada/salida. Las aplicaciones en este sector son ilimitadas, por ejemplo, el sector automotriz, los servicios de salud, la automatización de líneas de producción, diversión, comercio, ciudades inteligentes y educación.</li>
+                    </ol>
+                    <br><hr>
+                    <h2>Mision del programa</h2>
+                    <p>“El Programa Educativo de la carrera de Ingeniería en Telemática está comprometido con la excelencia en la formación integral y humana, y con el aprendizaje, el desarrollo y aplicación del conocimiento en los campos de las telecomunicaciones y la informática. Esta comprometido con la sociedad para mantener una oferta educativa pertinente en el área y desarrollar investigación aplicada involucrando alumnos en la solución de problemas de la sociedad. “</p>
+                    <hr>
+                    <h2>Plan de Estudios</h2>
+                    <p>Consulta el <a href="img/ITIplan.jpg" target="_blank">Plan de Estudios</a></p>
+                    <hr>
+                    <h2>Certificaciones:</h2>
+                    <ul>
+                        <li>Oracle:</li>
+                            <ul>
+                                <li>Oracle Certified Associate, MySQL 5</li>
+                                <li>Oracle Certified Professional, MySQL 5.6 Developer</li>
+                                <li>Oracle Certified Associate, Java SE 5/SE 6</li>
+                                <li>Oracle Certified Professional, Java SE 6 Programmer</li>
+                                <li>Oracle Certified Associate, Java SE 7 Programmer</li>
+                                <li>Oracle Certified Associate, Oracle Solaris 10 Operating System</li>
+                                <li>Oracle Certified Professional, Oracle Solaris 10 System Administrator</li>
+                                <li>Oracle Certified Associate, Oracle Solaris 11 System Administrator</li>
+                            </ul>
+                        <li>Cisco:</li>
+                        <ul>
+                            <li>Cisco Certified Entry Networking Technician (CCENT)</li>
+                            <li>Cisco Certified Network Associate (CCNA)</li>
+                            <li>Microsoft Technology Associate: Database Fundamentals</li>
+                        </ul>
+                        <li>Microsoft:</li>
+                        <ul>
+                            <li>Microsoft Office Specialist: Microsoft Office Word 2013</li>
+                            <li>Microsoft Office Specialist: Microsoft Office PowerPoint 2013</li>
+                            <li>Microsoft Office Specialist: Microsoft Office Excel 2013</li>
+                        </ul>
+                    </ul>
+                    <hr>
+                    <h2>Logros / Distinciones</h2>
+                    <ul>
+                      <li>Mejor Academia a nivel Latinoamérica que promueve la certificación, el programa Cisco Networking Academy Program y que forma nuevos estudiantes en el área de TI</li>
+                      <li>3 medallas a estudiantes ejemplares otorgadas por la asociación Trayectoria de Éxito.</li>
+                      <li>1er, 6º, 5º  lugar concurso Netriders México, 2009, 2011 y 2013.</li>
+                      <li>1er lugar expo ciencias otorgada por la Red Nacional de Actividades Juveniles en Ciencia y Tecnología, 2012 y 2013.</li>
+                      <li>5º y 6º lugar en el Torneo Mexicano de Robótica, 2016.</li>
+                      <li>150+ Certificaciones CCNA y CCENT como Academia CCNA</li>
+                      <li>480+ Certificaciones JAVA y Solaris como Academia Oracle.</li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+
+        
+        <footer>
+            <p>185572 - Israel Pérez Martínez, 185070 - Isaac Torres Aguilera</p>
+            <p>Ingeniería en Tecnologías de la Información</p>
+        </footer>
+    </div>
+</body>
+</html>
